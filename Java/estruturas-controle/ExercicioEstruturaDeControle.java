@@ -100,35 +100,53 @@ public class ExercicioEstruturaDeControle {
 		 *   tentativa, imprima a quantidade de tentativas restantes, e imprima
 		 *    se o número inserido é maior ou menor do que o número armazenado.
 		 */
-		int vidas = 0;
-		int numerojogo = 50;
-		int numeroAdvinhado = 0;
+//		int vidas = 0;
+//		int numerojogo = 50;
+//		int numeroAdvinhado = 0;
+//		
+//		System.out.println("#########JOGO DE ADIVINHAÇÃO#########");
+//		
+//		while (vidas != 10 && numerojogo != numeroAdvinhado) {
+//			System.out.print("Digite o número advinhado!: ");
+//			numeroAdvinhado = entrada.nextInt();
+//			
+//			if(numeroAdvinhado == numerojogo) {
+//				System.out.println("PARABÉNS!! Você acertou! "
+//						+ "\nO número era: " + numerojogo);
+//				
+//			}else {
+//				vidas++;
+//				System.out.println("Você Errou!");
+//				System.out.printf("\nVocê gastou %d tentativas de 10!", vidas);
+//				if (numeroAdvinhado > numerojogo) {
+//					System.out.println("O número que você advinhou é maior do que"
+//							+ " o número secreto!");
+//				}else {
+//					System.out.println("\nO número que você advinhou é menor do que"
+//							+ " o número secreto!");
+//				}
+//			}
+//			
+//		}
 		
-		System.out.println("#########JOGO DE ADIVINHAÇÃO#########");
+		/*Criar um programa que enquanto estiver recebendo números positivos, imprime
+		 *no console a soma dos números inseridos, caso receba um número negativo, 
+		 *encerre o programa. Tente utilizar a estrutura do while.*/
 		
-		while (vidas != 10 && numerojogo != numeroAdvinhado) {
-			System.out.print("Digite o número advinhado!: ");
-			numeroAdvinhado = entrada.nextInt();
-			
-			if(numeroAdvinhado == numerojogo) {
-				System.out.println("PARABÉNS!! Você acertou! "
-						+ "\nO número era: " + numerojogo);
+		double numeroteste = 0;
+		double somadoteste = 0;
+		do {
+			System.out.print("\nDigite um número: ");
+			numeroteste = entrada.nextDouble();
+			if(numeroteste > 0) {
+				somadoteste = numeroteste + somadoteste;
 				
+				System.out.printf("\nSeu número, após a soma, é: %.2f ", somadoteste);
 			}else {
-				vidas++;
-				System.out.println("Você Errou!");
-				System.out.printf("\nVocê gastou %d tentativas de 10!", vidas);
-				if (numeroAdvinhado > numerojogo) {
-					System.out.println("O número que você advinhou é maior do que"
-							+ " o número secreto!");
-				}else {
-					System.out.println("\nO número que você advinhou é menor do que"
-							+ " o número secreto!");
-				}
+				System.out.println("Você saiu do programa");
 			}
 			
-		}
-		
+		} while (numeroteste > 0);
 
 		entrada.close();
 	}
