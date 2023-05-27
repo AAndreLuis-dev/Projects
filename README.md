@@ -14,5 +14,3 @@ Repositório para guardar meus projetos de desenvolvimento, e mostrá-los para o
 
 ## Se estou online, eu estou...:
 
-<div> ![coding1](midiaReadme/xero-code.gif)
- ![coding2](midiaReadme/kroppa-digital.gif)
