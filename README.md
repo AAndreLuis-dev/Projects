@@ -14,5 +14,5 @@ Repositório para guardar meus projetos de desenvolvimento, e mostrá-los para o
 
 ## Se estou online, eu estou...:
 
-<div> ![coding1](https://tenor.com/bM2a1.gif)
- ![coding2](https://tenor.com/bDu5M.gif)
+<div> ![coding1](https://tenor.com/view/xero-code-code-xer0-code_xer0-code-xero-gif-24040429)
+ ![coding2](https://tenor.com/view/kroppa-digital-socialmedia-mothersday-developer-gif-21768300)
