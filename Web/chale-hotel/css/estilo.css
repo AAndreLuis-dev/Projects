@@ -1,0 +1,208 @@
+/*Estruturando o site*/
+
+*{
+    padding: 0;
+    margin: 0;
+    /*min-width: 200px;*/
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff url(../imagens/bg.png);
+    margin: 15px;
+    min-width: 200px;
+}
+
+#container{
+    background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
+    margin: 0 auto;
+    min-width: 720px;
+    max-width: 1180px;
+}
+
+#topo{
+    position: relative;
+    background: #dbcd87;
+    height: 15.6em;
+    min-width: 250px;
+}
+
+#area-logo{
+    position: absolute;
+    background: url(../imagens/topo-imagem-principal.png) no-repeat;
+    height: 250px;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo a{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    background: url(../imagens/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    text-indent: -9000px;  
+}
+
+
+#area-menu{
+    position: absolute;
+    background: url(../imagens/topo-imagem-lateral.png);
+    height: 250px;
+    width: 450px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+}
+
+#conteudo-menu{
+    position: absolute;
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+
+#menu-locais{
+    border-top: 1px solid #b5ab56;
+    border-bottom: 1px solid #b5ab56;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #8b8448;
+}
+
+#menu-locais .locais{
+    float: left;
+    line-height: 2.1em;
+}
+
+a{
+    text-decoration: none;
+    min-width: 0;
+}
+
+a.reserva{
+    text-transform: uppercase;
+    background: #a29750;
+    color: #fff5b0 ;
+    padding: 5px 10px;
+    float: right;
+}
+
+/* Barra lateral menu */
+
+#menu{
+    margin-top: 15px;
+    
+}
+
+#navegacao ul{
+    float: left;
+    min-width: 100px;
+}
+
+
+#navegacao ul a{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672a;
+    line-height: 30px;
+}
+
+#navegacao li a:hover{
+    background-color: #fff;
+}
+
+.depoimento{
+    width: 226px;
+    height: 164px;
+    float: right;
+    min-width: 0px;
+    
+}
+
+/*Area do conteudo*/
+
+#area-principal{
+    width: 50%;
+    float: left;
+    background: url(../imagens/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0;
+}
+
+#area-lateral{
+    width: 50%;
+    float: right;
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0;
+}
+
+.conteudo{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#rodape{
+    clear: both;
+    padding: 16px;
+    background: #fff url(../imagens/bg-rodape.png) top repeat-x;
+    color: #7d7640;
+}
+
+/* formatação de texto*/
+
+h2{
+    color: #7d7640;
+    line-height: 1.1em;
+    padding: 5px 0;
+}
+
+p{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#lista-lateral{
+    width: 100%;
+    padding: 10px;
+}
+
+#lista-lateral li{
+    padding: 20px;
+    margin: 0;
+}
+
+#lista-lateral img{
+    width: 150px;
+    height: 80px;
+    float: left;
+    padding-right: 10px;
+}
+
+#lista-lateral h3{
+    color: #7d7640;
+    text-transform: uppercase;
+    text-decoration: solid;
+    font-size: 1em;
+}
+
+#lista-lateral p{
+    font-size: 1em;
+}
+
+#lista-lateral li:hover{
+    background-color: #fff;
+}
