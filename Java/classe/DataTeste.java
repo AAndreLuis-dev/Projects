@@ -16,7 +16,7 @@ public class DataTeste {
 		System.out.println("Digite o ano: ");
 		data.ano = entrada.nextInt();
 		
-		System.out.printf("\nO dia é: %d , o mês é: %d , o ano é: %d .", data.dia, data.mes, data.ano);
+		System.out.println(data.obterDataFormatada());
 		
 		entrada.close();
 		
@@ -25,7 +25,7 @@ public class DataTeste {
 		data2.dia = 14;
 		data2.mes = 2;
 		data2.ano = 1823;
-		System.out.printf("\nO dia é: %d , o mês é: %d , o ano é: %d .", data2.dia, data2.mes, data2.ano);
+		System.out.println(data2.obterDataFormatada());
 		
 	}
 
