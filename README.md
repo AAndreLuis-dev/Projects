@@ -12,5 +12,5 @@ Repositório para guardar meus projetos de desenvolvimento, e mostrá-los para o
 ####
 - Tenho como foco registrar minha aprendizagem e minha evolução!
 
-## Se estou online, eu estou...:
+## Se estou online, eu estou codando!
 
