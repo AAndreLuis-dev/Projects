@@ -14,3 +14,5 @@ Repositório para guardar meus projetos de desenvolvimento, e mostrá-los para o
 
 ## Se estou online, eu estou codando!
 
+![Homem codando](https://github.com/AAndreLuis-dev/Projects/blob/main/images/xero-code.gif?raw=true) 
+![Mãos codando](https://github.com/AAndreLuis-dev/Projects/blob/main/images/kroppa-digital.gif?raw=true)
