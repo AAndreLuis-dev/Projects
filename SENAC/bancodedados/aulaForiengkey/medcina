@@ -1,0 +1,110 @@
+CREATE DATABASE med_saude;
+USE med_saude;
+
+CREATE TABLE pacientes(
+cod_paciente int AUTO_INCREMENT PRIMARY KEY,
+nome varchar (45) NOT NULL,
+email varchar (45) NOT NULL,
+telefone varchar (45) NOT NULL,
+endereco varchar (45) NOT NULL,
+nascimento varchar (45) NOT NULL,
+peso varchar (45) NOT NULL,
+altura varchar (45) NOT NULL,
+obs varchar (45) NOT NULL,
+sexo char NOT NULL
+);
+
+INSERT INTO pacientes(cod_paciente, nome , email, telefone, endereco , nascimento, peso, altura, obs, sexo)
+VALUES(null, 'Andre', 'andre@gmail.com', '9123912', 'brotas','12/09','80', '1.80','diabetico', 'M'),
+(null, 'Beatriz', 'biazinha@gmail.com', '931293', 'Vl', '04/06','50', '1.60','desmaios','F'),
+(null, 'Amanda', 'amandinha@gmail.com', '39129312', 'lauro','17/12','58', '1.58','gastrite', 'f'),
+(null, 'cauca', 'cacau@gmail.com', '91239123', 'cosme','16/04', '90', '1.85' ,'gigantismo', 'M'),
+(null, 'james', 'jameszinho@gmail.com', '7312731', 'manaus', '18/06','82','1.75','depressão', 'M'),
+(null, 'roberto', 'robertozahar@gmail.com', '9123912', 'rio vermelho','12/09','88', '1.77','exaustão','M'),
+(null, 'gabriela', 'gab@gmail.com', '931293', 'Vl','23/05','74', '1.65','enxaqueca', 'F'),
+(null, 'Dayane', 'dayday@gmail.com', '39129312', 'fazenda','17/12','55', '1.66' ,'colica', 'f'),
+(null, 'gabriel', 'gabtz@gmail.com', '91239123', 'pituba','16/04', '79','1.77','drogas', 'M'),
+(null, 'isaias', 'isas@gmail.com', '7312731', 'baixada','18/06','98', '2.00','hipertrofia', 'M');
+
+CREATE TABLE funcionarios(
+cod_funcionarios int AUTO_INCREMENT PRIMARY KEY,
+nome varchar (45) NOT NULL,
+cargo varchar (45) NOT NULL,
+dataEntrada varchar (45) NOT NULL
+);
+
+INSERT INTO funcionarios(cod_funcionarios, nome , cargo, dataEntrada)
+VALUES(null, 'André', 'Gerente de TI', ' 23/4/2014'),
+(null, 'Aline', 'Enfermeira', ' 12/08/2004'),
+(null, 'Natali', 'Médica', ' 20/10/20'),
+(null, 'jose', 'Segurança', '12/05/2008'),
+(null, 'Nicole', 'faxineira', ' 11/03/1998'),
+(null, 'jhonata', 'segurança', ' 13/04/2004'),
+(null, 'gisele', 'secretaria', ' 11/06/2006'),
+(null, 'roberta', 'cozinheira', ' 21/12/2007'),
+(null, 'crave', 'faz tudo', ' 17/03/2002'),
+(null, 'Nicolas', 'chefe', ' 11/03/1997');
+
+CREATE TABLE convenios(
+id int AUTO_INCREMENT PRIMARY KEY,
+razaoSocial varchar (45) NOT NULL,
+cnpj varchar (45) NOT NULL,
+pessoa int,
+FOREIGN KEY (pessoa) 
+REFERENCES funcionarios (cod_funcionarios)
+);
+
+INSERT INTO convenios(id, razaoSocial, cnpj, pessoa)
+VALUES(null, 'timaster','713291293112', '1'),
+(null, 'enfermagemforlove','12312412411', '2'),
+(null, 'helth', '123123124132','3'),
+(null, 'securityspace', '1231412312','4'),
+(null, 'faxinin','6212312312', '5'),
+(null, 'securityspace', '612421315123', '6'),
+(null, 'secretaria', '051294192312', '7'),
+(null, 'jaccan', '6124213123123', '8'),
+(null, 'aprendiz', '1242151235', '9'),
+(null, 'chefia', '12521512312','10');
+
+
+CREATE TABLE especialidade(
+n_especialidade int AUTO_INCREMENT PRIMARY KEY,
+descricao varchar (45) NOT NULL,
+quantidade varchar (45) NOT NULL,
+pessoa int,
+FOREIGN KEY (pessoa) 
+REFERENCES funcionarios (cod_funcionarios)
+);
+
+INSERT INTO especialidade(n_especialidade, descricao, quantidade, pessoa)
+VALUES(null, 'TI','3' ,'1'),
+(null, 'enfermagem','2', '2'),
+(null, 'medicina', '1','3'),
+(null, 'segurança', '4','4'),
+(null, 'limpeza','0', '5'),
+(null, 'segurança', '3', '6'),
+(null, 'secretaria', '3', '7'),
+(null, 'cozinheira', '6', '8'),
+(null, 'aprendiz', '1', '9'),
+(null, 'chefia', '5','10');
+
+CREATE TABLE rede_credenciada(
+cod_red int AUTO_INCREMENT PRIMARY KEY,
+localidade varchar (45) NOT NULL,
+endereço varchar (45) NOT NULL,
+pessoa int,
+FOREIGN KEY (pessoa) 
+REFERENCES funcionarios (cod_funcionarios)
+);
+
+INSERT INTO rede_credenciada(cod_red, localidade, endereço, pessoa)
+VALUES(null, 'SENAC','salvador', '1'),
+(null, 'UFBA','2salvador', '2'),
+(null, 'UFRJ', 'Rio de Janeiro','3'),
+(null, 'INTR', 'vasco','4'),
+(null, 'SENAI','salvador', '5'),
+(null, 'SENAI', 'salvador', '6'),
+(null, 'SENAI', 'goias', '7'),
+(null, 'UFBH', 'bh', '8'),
+(null, 'SENAC', 'manaus', '9'),
+(null, 'USP', 'sp','10');

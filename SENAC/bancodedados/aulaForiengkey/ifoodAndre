@@ -1,0 +1,53 @@
+CREATE DATABASE ifood;
+USE ifood;
+
+CREATE TABLE cadastro(
+id_user int AUTO_INCREMENT PRIMARY KEY,
+nome varchar (45) NOT NULL,
+email varchar (45) NOT NULL,
+telefone varchar (45) NOT NULL,
+endereco varchar (45) NOT NULL,
+cpf varchar (45) NOT NULL,
+nascimento varchar (45) NOT NULL,
+sexo char NOT NULL
+);
+
+INSERT INTO cadastro(id_user, nome , email, telefone, endereco,cpf,nascimento, sexo)
+VALUES(null, 'Andre', 'andre@gmail.com', '9123912', 'brotas', '3913912321', '12/09', 'M'),
+(null, 'Beatriz', 'biazinha@gmail.com', '931293', 'Vl', '9123912132', '04/06', 'F'),
+(null, 'Amanda', 'amandinha@gmail.com', '39129312', 'lauro', '93129312', '17/12', 'f'),
+(null, 'cauca', 'cacau@gmail.com', '91239123', 'cosme', '731273712', '16/04', 'M'),
+(null, 'james', 'jameszinho@gmail.com', '7312731', 'manaus', '81238121', '18/06', 'M');
+
+CREATE TABLE pedidos(
+cod_pedido int AUTO_INCREMENT PRIMARY KEY,
+descricao varchar (45) NOT NULL,
+restaurante varchar (45) NOT NULL,
+observacao varchar (45) NOT NULL,
+solicitante int,
+FOREIGN KEY (solicitante) 
+REFERENCES cadastro (id_user)	
+);
+
+INSERT INTO pedidos(cod_pedido, descricao , restaurante, observacao, solicitante)
+VALUES(null, 'yakisoba', 'japanese', ' c/molho', '1'),
+(null, 'File c/feijao', 'steakhouse', 'mal passada', '2'),
+(null, 'churrasco', 'churrasbrasil', 'sem cebola', '3'),
+(null, 'sardinha', 'atakado', 'crua', '4'),
+(null, 'hot-dog', 'quente-dog', 's/maionese', '5');
+
+CREATE TABLE pagamento(
+cod_pag int AUTO_INCREMENT PRIMARY KEY,
+forma_pag varchar (45) NOT NULL,
+solicitante int,
+FOREIGN KEY (solicitante)
+REFERENCES cadastro (id_user)	
+);
+
+INSERT INTO pagamento(cod_pag, forma_pag, solicitante)
+VALUES(null, 'cartão', '1'),
+(null, 'cartão', '2'),
+(null, 'dinheiro', '3'),
+(null, 'dinheiro', '4'),
+(null, 'pix', '5');
+

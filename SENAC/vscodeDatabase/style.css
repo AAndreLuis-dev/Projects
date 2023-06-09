@@ -1,0 +1,47 @@
+body{
+    background-color: whitesmoke;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100;
+}
+
+a{
+    text-decoration: none;
+}
+
+a{
+    color: white;
+    background-color: darkblue;
+    border: 2px solid black;
+    border-radius: 5px 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 100px;
+}
+
+.textoinput{
+    border-radius: 5px 2px;
+    top: 2px;
+    width: 200px;
+}
+
+.butao{
+    border-radius: 5px;
+    position: relative;
+    top: 0.5em;
+}
+
+.text{
+    background-color: white;
+    height: 100%;
+}
+
+.fototable{
+    background-color: white;
+}
+
+.login{
+    width: 300px;
+}

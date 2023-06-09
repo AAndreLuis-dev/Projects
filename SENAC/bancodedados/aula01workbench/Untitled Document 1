@@ -1,0 +1,21 @@
+CREATE DATABASE ti;
+USE ti;
+
+CREATE TABLE programadores(
+matricula int(4) AUTO_INCREMENT,
+nome varchar(45) NOT NULL,
+setor varchar(45) NOT NULL,
+email varchar(45) NOT NULL,
+PRIMARY KEY (matricula)
+);
+
+INSERT INTO programadores(matricula,nome,setor,email)
+VALUES(null, 'Ana', 'Contratos', 'ana@nana.com');
+
+INSERT INTO programadores(matricula,nome,setor,email)
+VALUES(null, 'Pedro', 'HTML', 'pedro@pd.com'),
+(null, 'Savio', 'corel', 'savio@salvesavio.com'),
+(null, 'Bia', 'css', 'biazinha@bz.com')
+;
+
+SELECT * FROM programadores;

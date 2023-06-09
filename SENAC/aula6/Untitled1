@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+#include<math.h>
+
+main(){
+    int num[3]; //vetor do tipo inteiro
+    int i; //contador
+
+    setlocale(LC_ALL, "portugese");
+
+    for (i = 0; i <= 2; i++){
+        prinft("Digite um número \n");
+        scanf("%i", &num[i]);
+    }
+    for (i = 0; i <= 2; i++){
+        prinft("\n O numero digitado foi: %i \n", &num[i]);
+
+}
