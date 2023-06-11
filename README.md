@@ -14,9 +14,9 @@ Repositório para guardar meus projetos de desenvolvimento, e mostrá-los para o
 
 ## Pastas do Repositório!
 
-- ![Java](https://github.com/AAndreLuis-dev/Projects/tree/main/Java) : Repositório para acompanhar colocar as atividades que faço em java no curso da udemy. Projetos futuros individuais do curso e que marecem destaque irei por separadamente.
+- [Java](https://github.com/AAndreLuis-dev/Projects/tree/main/Java) : Repositório para acompanhar colocar as atividades que faço em java no curso da udemy. Projetos futuros individuais do curso e que marecem destaque irei por separadamente.
 
-- ![Web](https://github.com/AAndreLuis-dev/Projects/tree/main/Web) : Repositório também para guardar meus projetos web feitos em cursos e projetos não muito especiais. Projetos de tamanhso maiores e mais importantes serão alocados em outro lugar.
+- [Web](https://github.com/AAndreLuis-dev/Projects/tree/main/Web) : Repositório também para guardar meus projetos web feitos em cursos e projetos não muito especiais. Projetos de tamanhso maiores e mais importantes serão alocados em outro lugar.
 
 
 ## Se estou online, eu estou codando!
