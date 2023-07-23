@@ -7,19 +7,20 @@ public class Data {
 	int ano;
 	
 	Data(){
-		dia = 01;
-		mes = 01;
-		ano = 1970;
+//		dia = 01;
+//		mes = 01;
+//		ano = 1970;
+		this(1, 1, 1970);
 	}
 	
-	Data (int dataInicial, int mesInicial, int anoInicial){
-		dia = dataInicial;
-		mes = mesInicial;
-		ano = anoInicial;
+	Data (int dia, int mes, int ano){
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
 	}
 	
 	String obterDataFormatada(){
-		return String.format("%d/%d/%d", dia, mes, ano);
+		return String.format("%d/%d/%d", this.dia, mes, ano);
 	}
 
 }

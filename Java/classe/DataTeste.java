@@ -1,13 +1,13 @@
 package classe;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class DataTeste {
 	
 	public static void main(String[] args) {
 		
 		Data data = new Data();
-		Scanner entrada = new Scanner(System.in);
+//		Scanner entrada = new Scanner(System.in);
 		
 //		System.out.println("Digite o dia: ");
 //		data.dia = entrada.nextInt();
@@ -18,7 +18,7 @@ public class DataTeste {
 		
 		System.out.println(data.obterDataFormatada());
 		
-		entrada.close();
+//		entrada.close();
 		
 		Data data2 = new Data(14, 2, 1823);
 		
