@@ -7,18 +7,18 @@ public class DataTeste {
 	public static void main(String[] args) {
 		
 		Data data = new Data();
-//		Scanner entrada = new Scanner(System.in);
+		Scanner entrada = new Scanner(System.in);
 		
-//		System.out.println("Digite o dia: ");
-//		data.dia = entrada.nextInt();
-//		System.out.println("Digite o mes: ");
-//		data.mes = entrada.nextInt();
-//		System.out.println("Digite o ano: ");
-//		data.ano = entrada.nextInt();
+		System.out.println("Digite o dia: ");
+		data.dia = entrada.nextInt();
+		System.out.println("Digite o mes: ");
+		data.mes = entrada.nextInt();
+		System.out.println("Digite o ano: ");
+		data.ano = entrada.nextInt();
 		
 		System.out.println(data.obterDataFormatada());
 		
-//		entrada.close();
+		entrada.close();
 		
 		Data data2 = new Data(14, 2, 1823);
 		
