@@ -55,7 +55,7 @@ main()
         case 1:
             //Definição de quantas produtos iremos cadastrar de vez
             fflush(stdin);
-            printf("Digite a quantidade de funcionários a serem registrados: \t");
+            printf("Digite o ID do produto a ser cadastrado: \t");
             scanf("%i", &loop);
             fflush(stdin);
 
